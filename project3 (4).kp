@@ -1,0 +1,47 @@
+beginning-of-program
+   define-new-instruction celebrate as
+   begin
+      iterate 4 times
+      begin
+         turnleft;
+      end;
+   end;
+   define-new-instruction turnback as
+   begin
+      iterate 2 times
+      begin
+         turnleft;
+      end;
+   end;
+   define-new-instruction moveback as
+   begin
+      turnback;
+      move;
+   end;
+   beginning-of-execution
+      While 
+      front-is-clear 
+      Do
+      begin
+         move;
+         If 
+         next-to-a-beeper then
+         begin
+            moveback;
+            turnleft;
+            move;
+            If 
+            next-to-a-beeper then
+            begin
+               moveback;
+            end;
+         end;
+      end;
+      If 
+      front-is-blocked then
+      begin
+         celebrate;
+      end;
+      turnoff;
+   end-of-execution
+end-of-program
