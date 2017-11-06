@@ -1,0 +1,41 @@
+beginning-of-program
+   DEFINE-NEW-INSTRUCTION 
+   movebeeper 
+   AS
+   BEGIN
+      move;
+      putbeeper;
+   END;
+   beginning-of-execution
+      putbeeper;
+      turnleft;
+      turnleft;
+      turnleft;
+      movebeeper;
+      movebeeper;
+      movebeeper;
+      turnleft;
+      movebeeper;
+      movebeeper;
+      movebeeper;
+      movebeeper;
+      movebeeper;
+      movebeeper;
+      turnleft;
+      turnleft;
+      move;
+      move;
+      move;
+      turnleft;
+      turnleft;
+      turnleft;
+      movebeeper;
+      movebeeper;
+      movebeeper;
+      turnleft;
+      movebeeper;
+      movebeeper;
+      
+      turnoff;
+   end-of-execution
+end-of-program
